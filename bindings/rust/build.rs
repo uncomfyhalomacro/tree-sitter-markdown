@@ -1,6 +1,7 @@
 fn main() {
-    let src_dir_block = std::path::Path::new("tree-sitter-markdown/src");
-    let src_dir_inline = std::path::Path::new("tree-sitter-markdown-inline/src");
+    let root_dir = std::path::Path::new(".")
+    let src_dir_block = root_dir.join("tree-sitter-markdown").join("src");
+    let src_dir_inline = root_dir.join("tree-sitter-markdown-inline").join("src");
 
     let mut c_config = cc::Build::new();
     c_config.include(&src_dir_block);
