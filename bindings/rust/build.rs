@@ -1,5 +1,5 @@
 fn main() {
-    let root_dir = std::path::Path::new(".")
+    let root_dir = std::path::Path::new(".");
     let src_dir_block = root_dir.join("tree-sitter-markdown").join("src");
     let src_dir_inline = root_dir.join("tree-sitter-markdown-inline").join("src");
 
